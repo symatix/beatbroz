@@ -1,0 +1,71 @@
+<template name="playground">
+
+<br><br><br>
+<!-- Remember - if you want to control functions globaly, don't declare them as var. Just name them. -->
+
+<button class="startButton">BEAT.IT</button><br><br>
+
+
+ <br>
+
+ <h2> {{startdac}} {{drums}} {{hh_fill}} {{arp}} {{vibe}} </h2>
+
+<br>
+<br>
+<h3>MIXER <span style="float:right">FILTER</span></h3>
+<div class="row">
+<div class="mixer">
+	<div class="col-xs-2 col-md-1 all-center">
+	  BEAT {{sliderVol1}}
+	  <div class="slider sliderVolume" id="slider1"></div>
+	</div>
+
+	<div class="col-xs-2 col-md-1 all-center">
+	  HIHAT {{sliderVol2}}
+	  <div class="slider sliderVolume" id="slider2"></div>
+	</div>
+
+	<div class="col-xs-2 col-md-1 all-center">
+	  ARP {{sliderVol3}}
+	  <div class="slider sliderVolume" id="slider3"></div>
+	</div>
+
+	<div class="col-xs-2 col-md-1 all-center">
+	  VIBE {{sliderVol4}}
+	  <div class="slider sliderVolume" id="slider4"></div>
+	</div>
+
+	<div class="col-xs-2 col-md-1 all-center">
+	  FX {{sliderVol5}}
+	  <div class="slider sliderVolume" id="slider5"></div>
+  	</div>
+  	</div>
+  	<div class="col-xs-12 col-md-7 filter">
+		DRUMS {{freq1}} <span style="float:right">{{res1}} Q</span><br>
+		<div class="slider sliderFreq col-xs-8" id="sliderFreq1"></div>
+		<div class="slider sliderRes col-xs-4" id="sliderRes1"></div>
+		<br>
+
+	 	HIHAT {{freq2}} <span style="float:right">{{res2}} Q</span><br>
+	 	<div class="slider sliderFreq col-xs-8" id="sliderFreq2"></div>
+		<div class="slider sliderRes col-xs-4" id="sliderRes2"></div>
+		<br>
+
+		ARP {{freq3}} <span style="float:right">{{res3}} Q</span><br>
+		<div class="slider sliderFreq col-xs-8" id="sliderFreq3"></div>
+		<div class="slider sliderRes col-xs-4" id="sliderRes3"></div><br>
+
+	  	VIBE {{freq4}} <span style="float:right">{{res4}} Q</span><br>
+	  	<div class="slider sliderFreq col-xs-8" id="sliderFreq4"></div>
+		<div class="slider sliderRes col-xs-4" id="sliderRes4"></div>
+		<br>
+
+	  	</div>
+	  	<div class="col-xs-12 col-md-7 speed">
+		  <h3 style="text-align:right">SPEED</h3><br>
+		  	<span style="display:none">{{sliderVal1}}</span>
+		  <div class="slider" id="sliderSpeed"></div><br>
+	  	</div>
+	</div>
+
+</template>
