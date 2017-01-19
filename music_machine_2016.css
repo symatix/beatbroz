@@ -24,10 +24,12 @@ body {
   min-height: 100%;
 }
 .col-md-1{
+  height:320px;
   padding:20px;
   background-color:rgba(0,0,0,0.5);
 }
 .filter{
+  height:210px;
   background-color:rgba(255,255,255,0.2);
   padding:20px 20px 22px 20px;
 }
